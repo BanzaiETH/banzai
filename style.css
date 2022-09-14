@@ -2,6 +2,7 @@
 
 *{
     scroll-behavior: smooth;
+    font-family: 'Aclonica', sans-serif;
 }
 body{
     margin: 0;
@@ -26,7 +27,6 @@ ul{
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
-    font-family: 'Aclonica', sans-serif;
     text-shadow: 2px 2px black;
 }
 ul li{
@@ -61,7 +61,15 @@ h3{
     background-color: rgb(221,220,209);
 }
 
-h1{
+.third-section{
+    text-align: center;
+    color: rgb(221,105,33);
+    text-shadow: 2px 2px rgb(221,220,209);
+    padding-top: 30px;
+    height: 65vh;
+}
+
+.title{
     font-size: 88;
     margin: 0;
 }
@@ -99,6 +107,40 @@ h1{
     padding-top: 20px;
 }
 
+.fees{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.box{
+    width: 300px;
+    height: 350px;
+    background-color: rgb(221,105,33);
+    border-radius: 35px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 4px 6px rgb(221,220,209);
+}
+
+.feeTitle{
+    font-size: 30px;
+    text-shadow: 2px 2px black;
+    color: rgb(221,220,209);
+}
+
+.feeText{
+    padding-top: 20px;
+    text-align: center;
+    text-shadow: 1px 2px black;
+    color: rgb(221,220,209);
+}
+
 .banzai-button{
     width: 250px;
     height: 60px;
@@ -118,6 +160,19 @@ h1{
     transition: 0.5s;
     box-shadow: 0px 0px;
 }
+
+.fourth-section{
+    background-color: rgb(221,220,209);
+    height: auto;
+}
+
+.fourthTitle{
+    font-size: 88px;
+    color: rgb(221,105,33);
+    text-shadow: 2px 2px rgb(27,27,27);
+    padding-top: 20px;
+}
+
 
 .shape img{
     width: 80px;
@@ -207,4 +262,10 @@ h1{
     100%{
         transform: rotate(-360deg);
     }
+}
+
+#dexscreener-embed {
+    min-width: 320px;
+    max-width: 80vw;
+    margin: 0 auto;
 }
