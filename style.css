@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+*{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    overflow-x: hidden;
+    background-color: rgb(27, 27, 27);    
+}
+.first-section{
+    text-align: center;
+    color: rgb(221,105,33);
+    text-shadow: 2px 2px rgb(221,220,209);
+    font-family: 'Aclonica', sans-serif;
+    height: 100vh;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3%;
+    padding-bottom: 10%;
+    margin: 0 auto;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    font-family: 'Aclonica', sans-serif;
+    text-shadow: 2px 2px black;
+}
+ul li{
+    list-style: none;
+    margin-right: 20px;
+    font-size: 24px;
+}
+a {
+    text-decoration: none;
+    color: rgb(221,220,209);
+}
+
+h3{
+    margin: 0;
+}
+
+.nav-section{
+    height: auto;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    border: 1px solid black;
+    background-color: rgb(0, 0, 0, 0.75);
+}
+.second-section{
+    height: 65%;
+    text-align: center;
+    color: rgb(221,105,33);
+    text-shadow: 2px 2px rgb(27,27,27);
+    font-family: 'Aclonica', sans-serif;
+    position: relative;
+    background-color: rgb(221,220,209);
+}
+
+h1{
+    font-size: 88;
+    margin: 0;
+}
+.about-section{
+    padding: 30px;
+}
+
+.aboutText{
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+    width: 75%;
+    text-shadow: 1px 1px rgb(27,27,27);
+    font-size: 24px;
+}
+
+.subtitle{
+    font-size: 50px;
+}
+.headerimage{
+    width: 500px;
+    height: 500px;
+    margin-top: 12%;
+    align-self: center;
+
+}
+
+.button-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    justify-items: center;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.banzai-button{
+    width: 250px;
+    height: 60px;
+    font-size: 18px;
+    background-color:rgb(221,105,33) ;
+    color: rgb(221,220,209);
+    box-shadow: 4px 4px rgb(221,220,209);
+    border: 1px solid white;
+    border-radius: 15px;
+    transition: 0.5s;
+    letter-spacing: 2px;
+    font-family: 'Aclonica', sans-serif;
+    cursor: pointer;
+}
+
+.banzai-button:hover{
+    transition: 0.5s;
+    box-shadow: 0px 0px;
+}
+
+.shape img{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+}
+.shape #sword1{
+    width: 250px;
+    height: 250px;
+    top: 0px;
+    animation: sword1anim 20s infinite;
+}
+
+.shape #sword2{
+    width: 150px;
+    height: 150px;
+    top: 0px;
+    left: 35%;
+    animation: sword2anim 10s infinite;
+}
+
+.shape #sword3{
+    top: 0%;
+    left: 25%;
+    right: 50%;
+    animation: sword3anim 15s infinite;
+}
+
+.shape #sword4{
+    top: 0;
+    right: 0;
+    animation: sword4anim 45s infinite;
+}
+.shape #sword5{
+    top: 30;
+    right: 5%;
+    height: 300px;
+    width: 300px;
+    animation: sword5anim 15s infinite linear;
+}
+.shape #sword6{
+    bottom: 5;
+    left: 5%;
+    height: 300px;
+    width: 300px;
+    animation: sword6anim 25s infinite linear;
+}
+
+@keyframes sword1anim {
+    0%{
+        transform:translate(-1000px,-500px) ;
+    }
+    100%{
+        transform: translate(1600px,500px) rotate(360deg);
+    }
+}
+@keyframes sword2anim {
+    0%{
+        transform:translate(-1000px,0px) ;
+    }
+    100%{
+        transform: translate(200px,1100px) rotate(360deg);
+    }
+}
+@keyframes sword3anim {
+    0%{
+        transform:translate(0px,0px) ;
+    }
+    100%{
+        transform: translate(-1000px,800px) rotate(360deg);
+    }
+}
+@keyframes sword4anim {
+    0%{
+        transform:translate(0px,-1000px) ;
+    }
+    100%{
+        transform: translate(-1500px,1000px) rotate(360deg);
+    }
+}
+@keyframes sword5anim {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes sword6anim {
+    100%{
+        transform: rotate(-360deg);
+    }
+}
